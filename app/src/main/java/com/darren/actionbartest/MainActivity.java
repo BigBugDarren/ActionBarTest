@@ -16,7 +16,7 @@ public class MainActivity extends ActionBarActivity {
         WebView wb = (WebView)findViewById(R.id.webView);
         wb.getSettings().setJavaScriptEnabled(true);
         wb.loadUrl("file:///android_asset/tests.html");
-        wb.addJavascriptInterface(null,"someThing");
+        wb.addJavascriptInterface(null,"");
         wb = null;
         wb.addJavascriptInterface(null, "");
     }
