@@ -17,10 +17,11 @@ public class MainActivity extends ActionBarActivity {
         wb.getSettings().setJavaScriptEnabled(true);
         wb.loadUrl("file:///android_asset/tests.html");
         wb.addJavascriptInterface(null,"");
-        wb = null;
-        wb.addJavascriptInterface(null, "");
     }
 
+    private void add(int a, int b) {
+        System.out.print(a + b + "");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
