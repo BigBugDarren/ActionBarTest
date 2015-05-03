@@ -1,9 +1,10 @@
 package com.darren.actionbartest;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 
 
@@ -19,6 +20,9 @@ public class MainActivity extends ActionBarActivity {
         wb.addJavascriptInterface(null,"someThing");
     }
 
+    private void onClick(View v) {
+        System.out.print("haha");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
