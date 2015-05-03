@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
         wb.getSettings().setJavaScriptEnabled(true);
         wb.loadUrl("file:///android_asset/tests.html");
         wb.addJavascriptInterface(null,"someThing");
+        wb = null;
     }
 
 
